@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Random Charts, Weird Times</title>
+
+    <link rel="stylesheet" type="text/css" href="style-part3.css">
+    <script src = "https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"> </script>
+    <style>
+    h2 {color: #666699;}
+    </style>
+  </head>
+  <body>
+    <div class="wrapper1">
+      <h2><b><i>These 2 charts have absolutely no correlation to each other, but I think everyone could use some visually satisfying and non-coronavirus related data right now. Enjoy!</b></i></h2>
+    </div>
+    <div class="wrapper">
+      <h1>Public Artwork in King County, WA</h1>
+      <h2>Representation of different mediums of art around the city</h2>
+    </div>
+    <canvas id="pie-chart" width="700" height="400"></canvas>
+    <p><i>These data came from the King County Open Data Portal. I had also used the same json file in my lab 5 (publicartwork.json).</p>
+    <p>*side note: I had originally tried to include this pie chart in my lab 5, but had a few different CORS errors.</i></p>
+    <div class="wrapper">
+      <h1>Annual National Park Visitors </h1>
+      <h2>Parks with the highest number of visitors (millions) in 2018 and 2019</h2>
+    </div>
+    <canvas id="parks-chart" width="800" height="450"></canvas>
+    <script src="script-part3.js"></script>
+    <p><i>This graph shows the top 10 most frequented National Parks by visitors in the millions. This public information and statistics were found on the <a href="https://www.nps.gov/subjects/socialscience/annual-visitation-highlights.htm" style="display: inline" target="_blank">NPS</a> site, where they provide a wide range of stats for different parks and other historical sites.</i></p>
+
+  </body>
+  <!-- Thanks to Tobias Ahlin, whose chart.js tutorial forms the basis of the line graph portion of this exercise -->
+</html>
